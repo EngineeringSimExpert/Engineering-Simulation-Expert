@@ -33,14 +33,50 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "ANSYS CFD & FEA Consulting Services",
-    "url": "https://engineeringsimexpert.github.io",
-    "logo": "https://engineeringsimexpert.github.io/favicon.png",
-     "sameAs": [
-    "https://www.linkedin.com/in/w-m-5b70423a3"
-  ]
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "ANSYS CFD & FEA Consulting Services",
+        "url": "https://engineeringsimexpert.github.io",
+        "logo": "https://engineeringsimexpert.github.io/favicon.png",
+        "sameAs": ["https://www.linkedin.com/in/w-m-5b70423a3"]
+      },
+      {
+        "@type": "Service",
+        "name": "ANSYS CFD Simulation",
+        "description": "Computational Fluid Dynamics (CFD) simulations using ANSYS Fluent for fluid flow, heat transfer, and thermal management optimization.",
+        "provider": {
+          "@type": "Organization",
+          "name": "ANSYS CFD & FEA Consulting Services",
+          "url": "https://engineeringsimexpert.github.io"
+        },
+        "url": "https://engineeringsimexpert.github.io/#services"
+      },
+      {
+        "@type": "Service",
+        "name": "ANSYS FEA Simulation",
+        "description": "Finite Element Analysis (FEA) using ANSYS Mechanical for structural, thermal, and mechanical stress analysis of components and assemblies.",
+        "provider": {
+          "@type": "Organization",
+          "name": "ANSYS CFD & FEA Consulting Services",
+          "url": "https://engineeringsimexpert.github.io"
+        },
+        "url": "https://engineeringsimexpert.github.io/#services"
+      },
+      {
+        "@type": "Service",
+        "name": "FEM Analysis",
+        "description": "Finite Element Method (FEM) simulations to predict component performance, identify potential failures, and optimize designs.",
+        "provider": {
+          "@type": "Organization",
+          "name": "ANSYS CFD & FEA Consulting Services",
+          "url": "https://engineeringsimexpert.github.io"
+        },
+        "url": "https://engineeringsimexpert.github.io/#services"
+      }
+    ]
   }
+    
   </script>
 
   <!-- ===== Google Analytics ===== -->
@@ -878,6 +914,7 @@
 </body>
 
 </html>
+
 
 
 
