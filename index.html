@@ -91,8 +91,14 @@
   <!-- ===== Fonts (FIXED BUG HERE) ===== -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
   <!-- ===== Tailwind ===== -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Calendly -->
+   
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
   <!-- ===== Your Styles ===== -->
   <style>
@@ -173,6 +179,12 @@
         <button onclick="scrollToSection('contact')" class="bg-blue-600 hover:bg-blue-500 text-white rounded-xl px-5 py-2 text-sm font-semibold transition-all">
           Get in Touch
         </button>
+        <button
+  onclick="Calendly.initPopupWidget({url: 'https:calendly.com/home4045/30min'});return false;"
+  class="bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl px-5 py-2 text-sm font-semibold transition-all"
+>
+  Book a Meeting
+</button>>
       </div>
 
       <!-- Mobile Menu Button -->
@@ -720,6 +732,30 @@
         </div>
       </form>
 
+      <!-- Divider -->
+      <div class="flex items-center my-10">
+        <div class="flex-grow border-t border-slate-200"></div>
+        <span class="mx-4 text-slate-400 text-sm font-medium">OR</span>
+        <div class="flex-grow border-t border-slate-200"></div>
+      </div>
+
+      <!-- Calendly Booking -->
+      <div class="text-center">
+        <h3 class="text-xl font-semibold text-slate-900 mb-3">
+          Prefer to talk directly?
+        </h3>
+        <p class="text-slate-600 mb-6">
+          Schedule a quick consultation and we’ll discuss your project.
+        </p>
+
+        <button
+          onclick="Calendly.initPopupWidget({url: 'https:calendly.com/home4045/30min'});return false;"
+          class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-500 transition shadow-lg"
+        >
+          Book a Meeting
+        </button>
+      </div>
+
       <!-- Messages -->
       <div
         id="successMessage"
@@ -730,6 +766,7 @@
         id="errorMessage"
         class="hidden mt-6 text-red-600 text-center font-medium"
       ></div>
+
     </div>
   </div>
 </section>
@@ -932,43 +969,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
