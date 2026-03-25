@@ -555,7 +555,7 @@
 <section id="testimonials" style="font-family: 'Inter', sans-serif; background: #f9fafb; padding: 80px 20px;">
 
   <style>
-    .testimonials-wrapper { max-width: 1000px; margin: 0 auto; }
+    .testimonials-wrapper { max-width: 1400px; margin: 0 auto; }
     .testimonials-header { text-align: center; margin-bottom: 50px; }
     .testimonials-header h2 { font-size: 2.2rem; font-weight: 700; color: #111827; margin: 0 0 12px; }
     .testimonials-header p { color: #6b7280; font-size: 1.05rem; margin: 0 auto; max-width: 540px; }
@@ -564,9 +564,9 @@
     .stat-item .stat-number { font-size: 2rem; font-weight: 700; color: #111827; display: flex; align-items: center; justify-content: center; gap: 4px; }
     .stat-item .stat-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: #9ca3af; margin-top: 4px; }
     .stat-divider { width: 1px; height: 36px; background: #e5e7eb; }
-    .star { color: #f59e0b; font-size: 1rem; }
-    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 24px; }
-    @media (max-width: 600px) { .testimonials-grid { grid-template-columns: 1fr; } .testimonials-header h2 { font-size: 1.6rem; } }
+    .star { color: #f59e0b; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    @media (max-width: 768px) { .testimonials-grid { grid-template-columns: 1fr; } .testimonials-header h2 { font-size: 1.6rem; } }
     .card {
       background: #ffffff;
       border: 1px solid #e5e7eb;
@@ -584,8 +584,8 @@
     }
     .card-title { font-size: 1.05rem; font-weight: 600; color: #111827; margin: 0 0 12px; padding-right: 40px; line-height: 1.4; }
     .card-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
-    .card-stars { display: flex; align-items: center; gap: 5px; }
-    .card-stars span { font-weight: 600; color: #111827; font-size: 0.875rem; }
+    .card-stars { display: flex; align-items: center; gap: 5px; font-size: 1rem; }
+    .card-stars span.score { font-weight: 600; color: #111827; font-size: 0.875rem; }
     .card-date { font-size: 0.75rem; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.06em; }
     .card-divider { height: 1px; background: linear-gradient(to right, #e5e7eb, transparent); margin: 20px 0; }
     .card-review { font-size: 0.95rem; color: #4b5563; line-height: 1.75; font-style: italic; margin: 0; }
@@ -629,10 +629,7 @@
         <div class="card-quote-bg">"</div>
         <h3 class="card-title">Finite Element Analysis (FEA) Expert Needed for Project</h3>
         <div class="card-meta">
-          <div class="card-stars">
-            <span class="star">★★★★★</span>
-            <span>5.0</span>
-          </div>
+          <div class="card-stars"><span class="star">★★★★★</span> <span class="score">5.0</span></div>
           <div class="card-date">Feb 26, 2026 – Mar 6, 2026</div>
         </div>
         <div class="card-divider"></div>
@@ -650,10 +647,7 @@
         <div class="card-quote-bg">"</div>
         <h3 class="card-title">Extracting Data from Mode Shapes</h3>
         <div class="card-meta">
-          <div class="card-stars">
-            <span class="star">★★★★★</span>
-            <span>5.0</span>
-          </div>
+          <div class="card-stars"><span class="star">★★★★★</span> <span class="score">5.0</span></div>
           <div class="card-date">Dec 30, 2025 – Dec 30, 2025</div>
         </div>
         <div class="card-divider"></div>
@@ -672,10 +666,7 @@
         <div class="card-quote-bg">"</div>
         <h3 class="card-title">ANSYS Project – Simulation</h3>
         <div class="card-meta">
-          <div class="card-stars">
-            <span class="star">★★★★★</span>
-            <span>5.0</span>
-          </div>
+          <div class="card-stars"><span class="star">★★★★★</span> <span class="score">5.0</span></div>
           <div class="card-date">Nov 20, 2025 – Nov 23, 2025</div>
         </div>
         <div class="card-divider"></div>
@@ -693,10 +684,7 @@
         <div class="card-quote-bg">"</div>
         <h3 class="card-title">FEM Analysis Review & Consultation</h3>
         <div class="card-meta">
-          <div class="card-stars">
-            <span class="star">★★★★★</span>
-            <span>5.0</span>
-          </div>
+          <div class="card-stars"><span class="star">★★★★★</span> <span class="score">5.0</span></div>
           <div class="card-date">Aug 23, 2025 – Nov 16, 2025</div>
         </div>
         <div class="card-divider"></div>
