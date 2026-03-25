@@ -547,6 +547,166 @@
     </div>
   </section>
 
+
+  <!-- Google Fonts -->
+<link href__="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Testimonials Section -->
+<section id="testimonials" style="font-family: 'Inter', sans-serif; background: #f9fafb; padding: 80px 20px;">
+
+  <style>
+    .testimonials-wrapper { max-width: 1000px; margin: 0 auto; }
+    .testimonials-header { text-align: center; margin-bottom: 50px; }
+    .testimonials-header h2 { font-size: 2.2rem; font-weight: 700; color: #111827; margin: 0 0 12px; }
+    .testimonials-header p { color: #6b7280; font-size: 1.05rem; margin: 0 auto; max-width: 540px; }
+    .testimonials-stats { display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 32px; flex-wrap: wrap; }
+    .stat-item { text-align: center; }
+    .stat-item .stat-number { font-size: 2rem; font-weight: 700; color: #111827; display: flex; align-items: center; justify-content: center; gap: 4px; }
+    .stat-item .stat-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: #9ca3af; margin-top: 4px; }
+    .stat-divider { width: 1px; height: 36px; background: #e5e7eb; }
+    .star { color: #f59e0b; font-size: 1rem; }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 24px; }
+    @media (max-width: 600px) { .testimonials-grid { grid-template-columns: 1fr; } .testimonials-header h2 { font-size: 1.6rem; } }
+    .card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 32px;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.08); }
+    .card-quote-bg {
+      position: absolute; top: 16px; right: 16px;
+      font-size: 7rem; line-height: 1; color: #111827;
+      opacity: 0.04; font-family: Georgia, serif; pointer-events: none;
+    }
+    .card-title { font-size: 1.05rem; font-weight: 600; color: #111827; margin: 0 0 12px; padding-right: 40px; line-height: 1.4; }
+    .card-meta { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .card-stars { display: flex; align-items: center; gap: 5px; }
+    .card-stars span { font-weight: 600; color: #111827; font-size: 0.875rem; }
+    .card-date { font-size: 0.75rem; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.06em; }
+    .card-divider { height: 1px; background: linear-gradient(to right, #e5e7eb, transparent); margin: 20px 0; }
+    .card-review { font-size: 0.95rem; color: #4b5563; line-height: 1.75; font-style: italic; margin: 0; }
+    .card-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .tag {
+      display: inline-block; padding: 4px 12px;
+      background: #f3f4f6; border: 1px solid #e5e7eb;
+      border-radius: 999px; font-size: 0.75rem; color: #374151; font-weight: 500;
+    }
+  </style>
+
+  <div class="testimonials-wrapper">
+
+    <!-- Header -->
+    <div class="testimonials-header">
+      <h2>⭐ Client Testimonials</h2>
+      <p>What clients say about working with me on FEA, ANSYS simulation, and structural analysis projects.</p>
+      <div class="testimonials-stats">
+        <div class="stat-item">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number">5.0 <span class="star">★</span></div>
+          <div class="stat-label">Avg Rating</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Satisfaction</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="testimonials-grid">
+
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="card-quote-bg">"</div>
+        <h3 class="card-title">Finite Element Analysis (FEA) Expert Needed for Project</h3>
+        <div class="card-meta">
+          <div class="card-stars">
+            <span class="star">★★★★★</span>
+            <span>5.0</span>
+          </div>
+          <div class="card-date">Feb 26, 2026 – Mar 6, 2026</div>
+        </div>
+        <div class="card-divider"></div>
+        <p class="card-review">"Walid did a great job with a very tight timeline for FEA analysis. He committed to the schedule with a fixed offer and delivered great results on time. He caught several errors with the 3D model provided and made appropriate corrections so the analysis could be conducted. I look forward to working with Walid more in the future."</p>
+        <div class="card-tags">
+          <span class="tag">Reliable</span>
+          <span class="tag">Solution Oriented</span>
+          <span class="tag">Detail Oriented</span>
+          <span class="tag">Accountable for Outcomes</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="card-quote-bg">"</div>
+        <h3 class="card-title">Extracting Data from Mode Shapes</h3>
+        <div class="card-meta">
+          <div class="card-stars">
+            <span class="star">★★★★★</span>
+            <span>5.0</span>
+          </div>
+          <div class="card-date">Dec 30, 2025 – Dec 30, 2025</div>
+        </div>
+        <div class="card-divider"></div>
+        <p class="card-review">"Walid is highly professional and knows exactly what he's doing. He was cooperative throughout the project, responsive to feedback, and delivered quality work. If you're looking for someone for ANSYS-related projects, he's the best choice. Highly recommended!"</p>
+        <div class="card-tags">
+          <span class="tag">Collaborative</span>
+          <span class="tag">Committed to Quality</span>
+          <span class="tag">Clear Communicator</span>
+          <span class="tag">Detail Oriented</span>
+          <span class="tag">Professional</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="card-quote-bg">"</div>
+        <h3 class="card-title">ANSYS Project – Simulation</h3>
+        <div class="card-meta">
+          <div class="card-stars">
+            <span class="star">★★★★★</span>
+            <span>5.0</span>
+          </div>
+          <div class="card-date">Nov 20, 2025 – Nov 23, 2025</div>
+        </div>
+        <div class="card-divider"></div>
+        <p class="card-review">"Highly recommended. Project was successfully delivered."</p>
+        <div class="card-tags">
+          <span class="tag">Committed to Quality</span>
+          <span class="tag">Solution Oriented</span>
+          <span class="tag">Clear Communicator</span>
+          <span class="tag">Accountable for Outcomes</span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="card-quote-bg">"</div>
+        <h3 class="card-title">FEM Analysis Review & Consultation</h3>
+        <div class="card-meta">
+          <div class="card-stars">
+            <span class="star">★★★★★</span>
+            <span>5.0</span>
+          </div>
+          <div class="card-date">Aug 23, 2025 – Nov 16, 2025</div>
+        </div>
+        <div class="card-divider"></div>
+        <p class="card-review">"Working with Walid on the FEA analysis of several components has been an excellent experience. He demonstrated a deep understanding of structural simulation and a remarkable ability to interpret complex results clearly and efficiently. His proactive approach, attention to detail, and readiness to support at every stage of the process made a significant difference in achieving accurate and reliable outcomes. Walid's technical competence and collaborative spirit were key to the success of the project. Highly recommended for any advanced FEA task."</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+  
   <!-- Why Me Section -->
   <section id="whyme" class="py-28 bg-[#0a0f1a]">
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
