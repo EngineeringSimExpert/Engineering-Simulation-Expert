@@ -472,10 +472,16 @@
     <!-- CTA -->
     <div class="cs-cta">
       <p>Need a similar analysis for your project?</p>
-      <a href__="#contact" onclick="scrollTo('#contact');return false;" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#0f172a;font-weight:700;font-size:1rem;padding:14px 32px;border-radius:12px;text-decoration:none;transition:all 0.3s" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">
-        Discuss Your Project
-        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
+     <a href="#contact"
+   onclick="document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' }); return false;"
+   style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#0f172a;font-weight:700;font-size:1rem;padding:14px 32px;border-radius:12px;text-decoration:none;transition:all 0.3s"
+   onmouseover="this.style.transform='translateY(-2px)'"
+   onmouseout="this.style.transform='translateY(0)'">
+  Discuss Your Project
+  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7"/>
+  </svg>
+</a>
     </div>
   </div>
 </section>
