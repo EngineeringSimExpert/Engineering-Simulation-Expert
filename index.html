@@ -30,21 +30,56 @@
   <meta property="og:image" content="https://engineeringsimexpert.github.io/favicon.png">
 
   <!-- ===== Structured Data for Google Site Name ===== -->
-  <script type="application/ld+json">
+ <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
+
+    /* ================= ORGANIZATION ================= */
     {
       "@type": "Organization",
       "@id": "https://engineeringsimexpert.github.io/#organization",
       "name": "ANSYS CFD & FEA Consulting Services",
       "url": "https://engineeringsimexpert.github.io",
       "logo": "https://engineeringsimexpert.github.io/favicon.png",
-      "description": "Professional ANSYS CFD and FEA consulting services specializing in fluid dynamics, structural analysis, thermal simulations, and engineering optimization.",
+      "description": "Engineering consulting services specializing in CFD (Computational Fluid Dynamics), FEM/FEA simulations, thermal analysis, and structural optimization using ANSYS tools.",
       "sameAs": [
         "https://www.linkedin.com/in/w-m-5b70423a3"
+      ],
+      "founder": {
+        "@id": "https://engineeringsimexpert.github.io/#person"
+      }
+    },
+
+    /* ================= PERSON (YOU) ================= */
+    {
+      "@type": "Person",
+      "@id": "https://engineeringsimexpert.github.io/#person",
+      "name": "CFD & FEM Engineer",
+      "jobTitle": "Computational Fluid Dynamics and Finite Element Method Engineer",
+      "description": "CFD and FEM engineer specializing in ANSYS Fluent and ANSYS Mechanical for fluid flow analysis, heat transfer, structural mechanics, and simulation-based design optimization.",
+      "worksFor": {
+        "@id": "https://engineeringsimexpert.github.io/#organization"
+      },
+      "url": "https://engineeringsimexpert.github.io",
+      "sameAs": [
+        "https://www.linkedin.com/in/w-m-5b70423a3"
+      ],
+      "knowsAbout": [
+        "Computational Fluid Dynamics (CFD)",
+        "Finite Element Method (FEM)",
+        "Finite Element Analysis (FEA)",
+        "ANSYS Fluent",
+        "ANSYS Mechanical",
+        "Heat Transfer Simulation",
+        "Structural Analysis",
+        "Thermal Simulation",
+        "Turbulence Modeling",
+        "Engineering Optimization"
       ]
     },
+
+    /* ================= WEBSITE ================= */
     {
       "@type": "WebSite",
       "@id": "https://engineeringsimexpert.github.io/#website",
@@ -59,41 +94,77 @@
         "query-input": "required name=search_term_string"
       }
     },
+
+    /* ================= SERVICES ================= */
+
     {
       "@type": "Service",
       "@id": "https://engineeringsimexpert.github.io/#cfd-service",
-      "name": "ANSYS CFD Simulation Services",
+      "name": "CFD Simulation Services",
       "serviceType": "Computational Fluid Dynamics Consulting",
-      "description": "Advanced CFD simulations using ANSYS Fluent for fluid flow analysis, heat transfer, turbulence modeling, and thermal system optimization.",
+      "description": "Advanced CFD simulations using ANSYS Fluent for fluid flow, heat transfer, turbulence modeling, and thermal system optimization.",
       "provider": {
         "@id": "https://engineeringsimexpert.github.io/#organization"
       },
       "areaServed": "Worldwide",
       "url": "https://engineeringsimexpert.github.io/#services"
     },
+
     {
       "@type": "Service",
       "@id": "https://engineeringsimexpert.github.io/#fea-service",
-      "name": "ANSYS FEA Simulation Services",
+      "name": "FEA / FEM Structural Analysis Services",
       "serviceType": "Finite Element Analysis Consulting",
-      "description": "Structural, thermal, and mechanical stress analysis using ANSYS Mechanical to optimize product design and prevent failure.",
+      "description": "Structural, thermal, and mechanical stress analysis using FEM/FEA methods in ANSYS Mechanical to improve design safety and performance.",
       "provider": {
         "@id": "https://engineeringsimexpert.github.io/#organization"
       },
       "areaServed": "Worldwide",
       "url": "https://engineeringsimexpert.github.io/#services"
     },
+
+    /* ================= CASE STUDIES (SEO BOOSTER) ================= */
     {
-      "@type": "Service",
-      "@id": "https://engineeringsimexpert.github.io/#fem-service",
-      "name": "Finite Element Method (FEM) Analysis",
-      "serviceType": "Engineering Simulation Services",
-      "description": "High-precision FEM simulations for structural integrity, fatigue analysis, and design optimization.",
-      "provider": {
-        "@id": "https://engineeringsimexpert.github.io/#organization"
-      },
-      "areaServed": "Worldwide",
-      "url": "https://engineeringsimexpert.github.io/#services"
+      "@type": "CreativeWork",
+      "@id": "https://engineeringsimexpert.github.io/#case-studies",
+      "name": "CFD and FEM Engineering Case Studies",
+      "description": "Engineering simulation case studies demonstrating CFD and FEM analysis for real-world applications in thermal systems, structural design, and fluid optimization.",
+      "url": "https://engineeringsimexpert.github.io/#case-studies",
+      "creator": {
+        "@id": "https://engineeringsimexpert.github.io/#person"
+      }
+    },
+
+    /* ================= FAQ (HIGH CTR BOOST) ================= */
+    {
+      "@type": "FAQPage",
+      "@id": "https://engineeringsimexpert.github.io/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is CFD analysis used for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CFD (Computational Fluid Dynamics) is used to simulate fluid flow, heat transfer, and thermal behavior in engineering systems such as HVAC, aerospace, automotive, and energy systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is FEM or FEA analysis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "FEM/FEA (Finite Element Method / Analysis) is used to evaluate structural strength, stress distribution, deformation, and failure risks in mechanical and thermal systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which software do you use for simulations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ANSYS Fluent is used for CFD simulations, and ANSYS Mechanical is used for FEM/FEA structural and thermal analysis."
+          }
+        }
+      ]
     }
   ]
 }
